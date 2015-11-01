@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5727C3221BE629A8007E29E9 /* StopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5727C3211BE629A8007E29E9 /* StopView.swift */; };
 		57C20B641BE3C37400C232E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C20B631BE3C37400C232E3 /* AppDelegate.swift */; };
-		57C20B661BE3C37400C232E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C20B651BE3C37400C232E3 /* ViewController.swift */; };
+		57C20B661BE3C37400C232E3 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C20B651BE3C37400C232E3 /* MapViewController.swift */; };
 		57C20B691BE3C37400C232E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57C20B671BE3C37400C232E3 /* Main.storyboard */; };
 		57C20B6B1BE3C37400C232E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57C20B6A1BE3C37400C232E3 /* Assets.xcassets */; };
 		57C20B6E1BE3C37400C232E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57C20B6C1BE3C37400C232E3 /* LaunchScreen.storyboard */; };
+		57C20B781BE3DE8100C232E3 /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C20B771BE3DE8100C232E3 /* Stop.swift */; };
+		57CE9DB01BE4CFCE004E8D8C /* GTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE9DAF1BE4CFCE004E8D8C /* GTT.swift */; };
+		57CE9DB21BE4D79D004E8D8C /* Departure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE9DB11BE4D79D004E8D8C /* Departure.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5727C3211BE629A8007E29E9 /* StopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopView.swift; sourceTree = "<group>"; };
 		57C20B601BE3C37400C232E3 /* TestGTT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestGTT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57C20B631BE3C37400C232E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		57C20B651BE3C37400C232E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		57C20B651BE3C37400C232E3 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		57C20B681BE3C37400C232E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		57C20B6A1BE3C37400C232E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57C20B6D1BE3C37400C232E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57C20B6F1BE3C37400C232E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57C20B771BE3DE8100C232E3 /* Stop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
+		57CE9DAF1BE4CFCE004E8D8C /* GTT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTT.swift; sourceTree = "<group>"; };
+		57CE9DB11BE4D79D004E8D8C /* Departure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Departure.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5727C3231BE629D8007E29E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5727C3211BE629A8007E29E9 /* StopView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		57C20B571BE3C37400C232E3 = {
 			isa = PBXGroup;
 			children = (
@@ -55,13 +71,33 @@
 			isa = PBXGroup;
 			children = (
 				57C20B631BE3C37400C232E3 /* AppDelegate.swift */,
-				57C20B651BE3C37400C232E3 /* ViewController.swift */,
+				57CE9DAF1BE4CFCE004E8D8C /* GTT.swift */,
+				57CE9DB31BE4D7D8004E8D8C /* Model */,
+				57CE9DB41BE4D7FC004E8D8C /* Control */,
+				5727C3231BE629D8007E29E9 /* View */,
 				57C20B671BE3C37400C232E3 /* Main.storyboard */,
 				57C20B6A1BE3C37400C232E3 /* Assets.xcassets */,
 				57C20B6C1BE3C37400C232E3 /* LaunchScreen.storyboard */,
 				57C20B6F1BE3C37400C232E3 /* Info.plist */,
 			);
 			path = TestGTT;
+			sourceTree = "<group>";
+		};
+		57CE9DB31BE4D7D8004E8D8C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				57CE9DB11BE4D79D004E8D8C /* Departure.swift */,
+				57C20B771BE3DE8100C232E3 /* Stop.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		57CE9DB41BE4D7FC004E8D8C /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				57C20B651BE3C37400C232E3 /* MapViewController.swift */,
+			);
+			name = Control;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +133,11 @@
 					57C20B5F1BE3C37400C232E3 = {
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = XPMAZV3YQ6;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -136,8 +177,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57C20B661BE3C37400C232E3 /* ViewController.swift in Sources */,
+				57C20B781BE3DE8100C232E3 /* Stop.swift in Sources */,
+				57C20B661BE3C37400C232E3 /* MapViewController.swift in Sources */,
 				57C20B641BE3C37400C232E3 /* AppDelegate.swift in Sources */,
+				57CE9DB01BE4CFCE004E8D8C /* GTT.swift in Sources */,
+				5727C3221BE629A8007E29E9 /* StopView.swift in Sources */,
+				57CE9DB21BE4D79D004E8D8C /* Departure.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +332,7 @@
 				57C20B741BE3C37400C232E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
