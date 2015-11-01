@@ -13,7 +13,7 @@ class MapViewController: UIViewController {
     @IBOutlet weak var listButton: UIBarButtonItem!
     @IBOutlet weak var waitingView: UIView!
     @IBOutlet weak var mapView: MKMapView!
-    private let maxAnnotations = 50
+    private let maxAnnotations = 250
     private let initialUserLocationSpan = 0.008
     private let annotationViewReuseId = "GTTPMapAnnotationViewIdentifier"
     //private let updateQueue = dispatch_queue_create("MapUpdateQueue", nil)
