@@ -15,7 +15,7 @@ class GTT: NSObject {
             return "\(baseUrl)/stops/all"
         }
     }
-    private static func departuresUrlWithStopId(stopId: Int) -> String {
+    private static func departuresUrlWithStopId(stopId: String) -> String {
         return "\(baseUrl)/stops/\(stopId)/departures"
     }
     static let sharedInstance = GTT()
@@ -47,15 +47,15 @@ class GTT: NSObject {
             return [Stop]()
         }
     }
-    func departuresForStopId(stopId: Int) -> [Departure] {
+    func departuresForStopId(stopId: String) -> [LineDepartures] {
         if let jsonStops = fetchUrl(GTT.departuresUrlWithStopId(stopId)) as? NSArray {
             return jsonStops.map({
                 if let dictionary = $0 as? NSDictionary {
-                    return Departure(dictionary: dictionary)
+                    return LineDepartures(dictionary: dictionary)
                 }
-                return Departure()
+                return LineDepartures()
             })
         }
-        return [Departure]()
+        return [LineDepartures]()
     }
 }

@@ -21,10 +21,15 @@ class StopView: MKPinAnnotationView {
     
     override init(annotation: MKAnnotation?, reuseIdentifier: String?) {
         super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
-        rightCalloutAccessoryView = UIButton(type: UIButtonType.DetailDisclosure)
+        
+        let button = UIButton(type: UIButtonType.DetailDisclosure)
+        rightCalloutAccessoryView = button
+        
+        
         let label = UILabel(frame: CGRectMake(0, 0, 80, frame.height))
         label.textAlignment = NSTextAlignment.Center
         leftCalloutAccessoryView = label
+        
         canShowCallout = true
     }
 

@@ -10,6 +10,7 @@ import UIKit
 import MapKit
 
 class MapViewController: UIViewController {
+    @IBOutlet weak var listButton: UIBarButtonItem!
     @IBOutlet weak var waitingView: UIView!
     @IBOutlet weak var mapView: MKMapView!
     private let maxAnnotations = 50
@@ -55,9 +56,9 @@ class MapViewController: UIViewController {
                 self.waitingView.hidden = false
             }*/
             
-            // Find which stops can be visible and are already on the map
+            // Find which stops can be visible and have lines
             //NSLog("Filtering toAdd")
-            let toShow = self.allStops.filter({ MKMapRectContainsPoint(self.mapView.visibleMapRect, MKMapPointForCoordinate($0.coordinate)) })
+            let toShow = self.allStops.filter({ MKMapRectContainsPoint(self.mapView.visibleMapRect, MKMapPointForCoordinate($0.coordinate)) && $0.lines != "" })
             //NSLog("Filtered toAdd: \(toShow.count)")
             
             // Find which stops are currently on the map but no more visible
@@ -72,10 +73,12 @@ class MapViewController: UIViewController {
                     self.mapView.addAnnotations(toShow)
                     self.mapView.removeAnnotations(toHide)
                     //NSLog("Updated annotations: \(self.mapView.annotations.count)")
+                    self.listButton.enabled = true
                 }
             } else {
                 // Otherwize remove every stop
                 dispatch_async(dispatch_get_main_queue()) {
+                    self.listButton.enabled = false
                     //NSLog("Removing annotations: \(self.mapView.annotations.count)")
                     self.mapView.removeAnnotations(self.mapView.annotations)
                     //NSLog("Removed annotations")
@@ -100,6 +103,20 @@ class MapViewController: UIViewController {
             locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
             locationManager.distanceFilter = 5.0
             locationManager.startUpdatingLocation()
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "StopDetails" {
+            if let vc = segue.destinationViewController as? StopDetailsViewController {
+                if let stop = sender as? Stop {
+                    vc.stop = stop
+                }
+            }
+        } else if segue.identifier == "StopList" {
+            if let vc = segue.destinationViewController as? StopListViewController {
+                vc.stops = mapView.annotations.filter({ $0 is Stop }) as! [Stop]
+            }
         }
     }
 }
@@ -148,7 +165,8 @@ extension MapViewController: MKMapViewDelegate {
     }
     func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         if let stop = view.annotation as? Stop {
-            NSLog("\(stop.name) tapped: \(stop.lines)")
+            //NSLog("\(stop.name) tapped: \(stop.lines)")
+            performSegueWithIdentifier("StopDetails", sender: stop)
         }
     }
 }

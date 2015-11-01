@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "1cT-ju-pBa"; */
+"1cT-ju-pBa.text" = "Titolo";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "9qG-Cv-NnC"; */
+"9qG-Cv-NnC.text" = "Sottotitolo";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "Hoj-zO-6kt"; */
+"Hoj-zO-6kt.text" = "Sottotitolo";
+
+/* Class = "UIBarButtonItem"; title = "Map"; ObjectID = "d4h-LM-jj8"; */
+"d4h-LM-jj8.title" = "Mappa";
+
+/* Class = "UIBarButtonItem"; title = "List"; ObjectID = "ePL-rb-8n3"; */
+"ePL-rb-8n3.title" = "Elenco";
+
+/* Class = "UINavigationItem"; title = "Stops on map"; ObjectID = "fCQ-22-pft"; */
+"fCQ-22-pft.title" = "Fermate sulla mappa";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "gnb-bl-Joe"; */
+"gnb-bl-Joe.text" = "Titolo";
+
+/* Class = "UIBarButtonItem"; title = "List"; ObjectID = "lZL-5A-U5S"; */
+"lZL-5A-U5S.title" = "Elenco";

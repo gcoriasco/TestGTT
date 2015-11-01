@@ -59,6 +59,11 @@ class Stop: NSObject, MKAnnotation {
             return dictionary["lines"] as? String ?? ""
         }
     }
+    var placeName: String {
+        get {
+            return dictionary["placeName"] as? String ?? ""
+        }
+    }
     init(dictionary: NSDictionary) {
         self.dictionary = dictionary
     }

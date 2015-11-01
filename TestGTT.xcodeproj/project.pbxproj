@@ -7,29 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5719474A1BE684350031FFFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 571947491BE684350031FFFF /* LaunchScreen.storyboard */; };
+		5719474F1BE685A90031FFFF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 571947511BE685A90031FFFF /* InfoPlist.strings */; };
 		5727C3221BE629A8007E29E9 /* StopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5727C3211BE629A8007E29E9 /* StopView.swift */; };
+		5727C3251BE63F16007E29E9 /* StopDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5727C3241BE63F16007E29E9 /* StopDetailsViewController.swift */; };
+		5727C3271BE659DA007E29E9 /* Departure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5727C3261BE659DA007E29E9 /* Departure.swift */; };
+		5727C3291BE67644007E29E9 /* StopListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5727C3281BE67644007E29E9 /* StopListViewController.swift */; };
 		57C20B641BE3C37400C232E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C20B631BE3C37400C232E3 /* AppDelegate.swift */; };
 		57C20B661BE3C37400C232E3 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C20B651BE3C37400C232E3 /* MapViewController.swift */; };
 		57C20B691BE3C37400C232E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57C20B671BE3C37400C232E3 /* Main.storyboard */; };
 		57C20B6B1BE3C37400C232E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57C20B6A1BE3C37400C232E3 /* Assets.xcassets */; };
-		57C20B6E1BE3C37400C232E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57C20B6C1BE3C37400C232E3 /* LaunchScreen.storyboard */; };
 		57C20B781BE3DE8100C232E3 /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C20B771BE3DE8100C232E3 /* Stop.swift */; };
 		57CE9DB01BE4CFCE004E8D8C /* GTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE9DAF1BE4CFCE004E8D8C /* GTT.swift */; };
-		57CE9DB21BE4D79D004E8D8C /* Departure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE9DB11BE4D79D004E8D8C /* Departure.swift */; };
+		57CE9DB21BE4D79D004E8D8C /* LineDepartures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CE9DB11BE4D79D004E8D8C /* LineDepartures.swift */; };
+		57FB33AF1BE6879F00B49D47 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57FB33AE1BE6879F00B49D47 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		571947491BE684350031FFFF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		571947521BE685AC0031FFFF /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5727C3211BE629A8007E29E9 /* StopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopView.swift; sourceTree = "<group>"; };
+		5727C3241BE63F16007E29E9 /* StopDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopDetailsViewController.swift; sourceTree = "<group>"; };
+		5727C3261BE659DA007E29E9 /* Departure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Departure.swift; sourceTree = "<group>"; };
+		5727C3281BE67644007E29E9 /* StopListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopListViewController.swift; sourceTree = "<group>"; };
+		5727C32A1BE68007007E29E9 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Main.strings; sourceTree = "<group>"; };
 		57C20B601BE3C37400C232E3 /* TestGTT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestGTT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57C20B631BE3C37400C232E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57C20B651BE3C37400C232E3 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		57C20B681BE3C37400C232E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		57C20B6A1BE3C37400C232E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		57C20B6D1BE3C37400C232E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		57C20B6F1BE3C37400C232E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57C20B771BE3DE8100C232E3 /* Stop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
 		57CE9DAF1BE4CFCE004E8D8C /* GTT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTT.swift; sourceTree = "<group>"; };
-		57CE9DB11BE4D79D004E8D8C /* Departure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Departure.swift; sourceTree = "<group>"; };
+		57CE9DB11BE4D79D004E8D8C /* LineDepartures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineDepartures.swift; sourceTree = "<group>"; };
+		57FB33AE1BE6879F00B49D47 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,14 +81,14 @@
 			isa = PBXGroup;
 			children = (
 				57C20B631BE3C37400C232E3 /* AppDelegate.swift */,
-				57CE9DAF1BE4CFCE004E8D8C /* GTT.swift */,
 				57CE9DB31BE4D7D8004E8D8C /* Model */,
 				57CE9DB41BE4D7FC004E8D8C /* Control */,
 				5727C3231BE629D8007E29E9 /* View */,
 				57C20B671BE3C37400C232E3 /* Main.storyboard */,
+				571947491BE684350031FFFF /* LaunchScreen.storyboard */,
+				57FB33AE1BE6879F00B49D47 /* Info.plist */,
+				571947511BE685A90031FFFF /* InfoPlist.strings */,
 				57C20B6A1BE3C37400C232E3 /* Assets.xcassets */,
-				57C20B6C1BE3C37400C232E3 /* LaunchScreen.storyboard */,
-				57C20B6F1BE3C37400C232E3 /* Info.plist */,
 			);
 			path = TestGTT;
 			sourceTree = "<group>";
@@ -86,7 +96,9 @@
 		57CE9DB31BE4D7D8004E8D8C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				57CE9DB11BE4D79D004E8D8C /* Departure.swift */,
+				5727C3261BE659DA007E29E9 /* Departure.swift */,
+				57CE9DAF1BE4CFCE004E8D8C /* GTT.swift */,
+				57CE9DB11BE4D79D004E8D8C /* LineDepartures.swift */,
 				57C20B771BE3DE8100C232E3 /* Stop.swift */,
 			);
 			name = Model;
@@ -96,6 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				57C20B651BE3C37400C232E3 /* MapViewController.swift */,
+				5727C3241BE63F16007E29E9 /* StopDetailsViewController.swift */,
+				5727C3281BE67644007E29E9 /* StopListViewController.swift */,
 			);
 			name = Control;
 			sourceTree = "<group>";
@@ -148,6 +162,7 @@
 			knownRegions = (
 				en,
 				Base,
+				it,
 			);
 			mainGroup = 57C20B571BE3C37400C232E3;
 			productRefGroup = 57C20B611BE3C37400C232E3 /* Products */;
@@ -164,9 +179,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57C20B6E1BE3C37400C232E3 /* LaunchScreen.storyboard in Resources */,
+				5719474A1BE684350031FFFF /* LaunchScreen.storyboard in Resources */,
 				57C20B6B1BE3C37400C232E3 /* Assets.xcassets in Resources */,
 				57C20B691BE3C37400C232E3 /* Main.storyboard in Resources */,
+				57FB33AF1BE6879F00B49D47 /* Info.plist in Resources */,
+				5719474F1BE685A90031FFFF /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,30 +196,34 @@
 			files = (
 				57C20B781BE3DE8100C232E3 /* Stop.swift in Sources */,
 				57C20B661BE3C37400C232E3 /* MapViewController.swift in Sources */,
+				5727C3251BE63F16007E29E9 /* StopDetailsViewController.swift in Sources */,
 				57C20B641BE3C37400C232E3 /* AppDelegate.swift in Sources */,
 				57CE9DB01BE4CFCE004E8D8C /* GTT.swift in Sources */,
+				5727C3291BE67644007E29E9 /* StopListViewController.swift in Sources */,
 				5727C3221BE629A8007E29E9 /* StopView.swift in Sources */,
-				57CE9DB21BE4D79D004E8D8C /* Departure.swift in Sources */,
+				5727C3271BE659DA007E29E9 /* Departure.swift in Sources */,
+				57CE9DB21BE4D79D004E8D8C /* LineDepartures.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		571947511BE685A90031FFFF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				571947521BE685AC0031FFFF /* it */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		57C20B671BE3C37400C232E3 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				57C20B681BE3C37400C232E3 /* Base */,
+				5727C32A1BE68007007E29E9 /* it */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		57C20B6C1BE3C37400C232E3 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				57C20B6D1BE3C37400C232E3 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -297,7 +318,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestGTT/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.gcoriasco.TestGTT;
+				PRODUCT_BUNDLE_IDENTIFIER = gcoriasco.TestGTT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -308,7 +329,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestGTT/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.gcoriasco.TestGTT;
+				PRODUCT_BUNDLE_IDENTIFIER = gcoriasco.TestGTT;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
