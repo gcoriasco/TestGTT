@@ -32,6 +32,7 @@ class GTT: NSObject {
         }
         return nil
     }
+    // Download full stops list
     var allStops: [Stop] {
         get {
             if let json = fetchUrl(GTT.allStopsUrl) as? NSDictionary {
@@ -47,6 +48,7 @@ class GTT: NSObject {
             return [Stop]()
         }
     }
+    // Download departures for a particular stop
     func departuresForStopId(stopId: String) -> [LineDepartures] {
         if let jsonStops = fetchUrl(GTT.departuresUrlWithStopId(stopId)) as? NSArray {
             return jsonStops.map({
